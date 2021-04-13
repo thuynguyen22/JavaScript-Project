@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>menu nha hang</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./menu_new.css">
+    <!-- <script src="./menu_new.js"></script> -->
+    <script src="./breakfast.js"></script>
+    <script src="./dessert.js"></script>
+    <script src="./dinner.js"></script>
+    <script src="./drink.js"></script>
+    <script src="./wine.js"></script>
+    <script src="./lunch.js"></script>
+    <script></script>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="" />logo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Stories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown">Book a table</a>
+                            <!-- <div class="dropdown-content">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div> -->
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> &nbsp;
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        &nbsp;
+                        <li><a href="#" style="color: black;"></a></li>
+                        <li><a href="#" style="font-size: 100%;color: red;">Register</a> </li>
+                        &nbsp; &nbsp;
+                        <li><a href="#" style="font-size: 100%;color: red;">LogIn</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div id="menu-ngag">
+            <ul class="nav nav-pills justify-content-center flex-column flex-sm-row" id="myPill" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="tab-Breakfast" data-toggle="tab" href="#content-Breakfast" role="tab"
+                        aria-controls="content-Breakfast" aria-selected="true">
+                        Breakfast
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Lunch" data-toggle="tab" href="#content-Lunch" role="tab"
+                        aria-controls="content-Lunch" aria-selected="false">
+                        Lunch
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " id="tab-Dinner" data-toggle="tab" href="#content-Dinner" role="tab"
+                        aria-controls="content-Dinner" aria-selected="false">
+                        Dinner
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " id="tab-Drinks" data-toggle="tab" href="#content-Drinks" role="tab"
+                        aria-controls="content-Drinks" aria-selected="false">
+                        Drinks
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " id="tab-Desserts" data-toggle="tab" href="#content-Desserts" role="tab"
+                        aria-controls="content-Desserts" aria-selected="false">
+                        Desserts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " id="tab-Wine" data-toggle="tab" href="#content-Wine" role="tab"
+                        aria-controls="content-Wine" aria-selected="false">
+                        Wine
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="monAn">
+            <div class="tab-content" id="myPillContent">
+
+                <div class="tab-pane fade show active" id="content-Breakfast" role="tabpanel"
+                    aria-labelledby="tab-Breakfast">
+                    <!-- goi tu local -->
+                    <div class="container-fluild mt-5 md-5 ">
+                        <div class="container">
+                            <div class="h3 mb-5">List Breakfast</div>
+                            <div class="row" id="buaSang"></div>
+                            <script> listBreakfast();</script>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="content-Lunch" role="tabpanel" aria-labelledby="tab-Lunch">
+                    <div class="container-fluild mt-5 md-5 ">
+                        <div class="container">
+                            <div class="h3 mb-5">List Lunch</div>
+                            <div class="row" id="buaTrua"></div>
+                            <script> listLunch();</script>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade " id="content-Dinner" role="tabpanel" aria-labelledby="tab-Dinner">
+                    <div class="container-fluild mt-5 md-5 ">
+                        <div class="container">
+                            <div class="h3 mb-5">Sản phẩm bán chạy</div>
+                            <div class="row" id="buaToi"></div>
+                            <script> listDinner();</script>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade " id="content-Drinks" role="tabpanel" aria-labelledby="tab-Drinks">
+                    <div class="container-fluild mt-5 md-5 ">
+                        <div class="container">
+                            <div class="h3 mb-5">Sản phẩm bán chạy</div>
+                            <div class="row" id="doUong"></div>
+                            <script> listDrink();</script>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="content-Desserts" role="tabpanel" aria-labelledby="tab-Desserts">
+                    <div class="container-fluild mt-5 md-5 ">
+                        <div class="container">
+                            <div class="h3 mb-5">Sản phẩm bán chạy</div>
+                            <div class="row" id="doNgot"></div>
+                            <script> listDessert();</script>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="content-Wine" role="tabpanel" aria-labelledby="tab-Wine">
+                    <div class="container-fluild mt-5 md-5 ">
+                        <div class="container">
+                            <div class="h3 mb-5">Sản phẩm bán chạy</div>
+                            <div class="row" id="ruou"></div>
+                            <script> listWine();</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
